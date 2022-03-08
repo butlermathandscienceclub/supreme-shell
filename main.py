@@ -4,11 +4,11 @@ from time import gmtime, strftime
 
 ##
 cmdstr = ">"
-var_e = "str(random.randrange(1, 10))"
-var_s = "cubing"
+var_e = ""
+var_s = ""
 nofile = "file/dir not found"
-homedir = "/home/runner/"
-intro = "welcome to KellanShell! "
+homedir = "/"
+intro = "welcome to SupremeShell! "
 ##
 
 var_t = (" strftime(\"%Y-%m-%d %H:%M:%S\", gmtime()) ")
