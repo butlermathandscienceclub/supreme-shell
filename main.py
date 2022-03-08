@@ -19,10 +19,10 @@ while True:
 	cur_cmd= cmdstr.replace("{path}", os.getcwd()).replace("{un}", os.environ.get("USER")).replace("{t}", eval(var_t) or "").replace("{s}", var_s).replace("{e}", eval(var_e))
 	i = input(cur_cmd+" ")
 	if i == "exit":
-		print("exiting comand shell... ",end="")
+		print("exiting  SupremeShell... ",end="")
 		print("done")
 		break
-	elif i == "cd":
+	elif i == "cd" or i == "cd ":
 		in_ = input("where to? ")
 		try:
 			
@@ -32,6 +32,6 @@ while True:
 	elif i == "home"		:
 		os.chdir(homedir)
 	elif i == "help":
-		print("kellanshell!")
+		print("supremeshell!")
 	else:	
 		exe(i)
